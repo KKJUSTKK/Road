@@ -19,7 +19,9 @@ bot.music.start(bot, {
 
 // Events.
 bot.on("ready", function() {
-    bot.user.setActivity(`Hi, Im The Music Bot`);
+    bot.user.setActivity(`PREFIX +`, {
+       type:'PLAYING'
+    });
     console.log(`${bot.user.username} is Ready!`);
 });
 
